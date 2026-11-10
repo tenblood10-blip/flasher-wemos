@@ -1,61 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical"
-  android:padding="24dp">
-
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="KOPI QRIS - Rp 5.000"
-    android:textSize="24sp"
-    android:textStyle="bold" />
-
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Nama WiFi:"
-    android:layout_marginTop="24dp" />
-
-  <EditText
-    android:id="@+id/inputSSID"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Contoh: Warkop_Bandung" />
-
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Sandi WiFi:"
-    android:layout_marginTop="16dp" />
-
-  <EditText
-    android:id="@+id/inputPass"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Contoh: kopi12345"
-    android:inputType="textPassword" />
-
-  <Button
-    android:id="@+id/btnConnect"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="HUBUNGKAN OTG"
-    android:layout_marginTop="24dp" />
-
-  <Button
-    android:id="@+id/btnFlash"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="FLASH MESIN KOPI" />
-
-  <ProgressBar
-    android:id="@+id/progress"
-    style="?android:attr/progressBarStyleHorizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp" />
-
-</LinearLayout>w
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/etIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP Wemos (192.168.4.1)" />
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesan / Nominal" />
+    <Button
+        android:id="@+id/btnFlash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FLASH WEMOS" />
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEST" />
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Siap" />
+</LinearLayout>
