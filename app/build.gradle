@@ -2,10 +2,10 @@ plugins {
     id 'com.android.application'
 }
 android {
-    namespace 'com.flasher.wemos'
+    namespace 'com.kopi.flasher'
     compileSdk 34
     defaultConfig {
-        applicationId "com.flasher.wemos"
+        applicationId "com.kopi.flasher"
         minSdk 24
         targetSdk 34
         versionCode 1
